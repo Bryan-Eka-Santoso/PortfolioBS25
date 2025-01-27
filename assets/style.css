@@ -47,3 +47,7 @@ a {
     color: var(--dark);
     text-decoration: none;
 }
+
+.img-internship {
+    width: 100%;
+}
