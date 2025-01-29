@@ -51,3 +51,36 @@ a {
 .img-internship {
     width: 100%;
 }
+
+.more-internship1 {
+    display: none;
+}
+
+.readmore {
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+}
+
+section#resume,
+section#projects,
+section#contact {
+    display: none;
+}
+
+.icons-sosmed {
+    font-size: 1.3rem;
+    padding: 0.5rem 0.8rem;
+    margin: 0 0.2rem;
+    background-color: var(--dark);
+    color: var(--light);
+    border-radius: 50%;
+}
+
+.icons-sosmed:hover {
+    border: 1px solid var(--dark);
+    background-color: var(--light);
+    color: var(--dark);
+}
