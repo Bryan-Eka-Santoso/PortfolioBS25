@@ -78,8 +78,12 @@
                             <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickResume()">Resume</button>
                             <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickProjects()">Projects & Achievements</button>
                             <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickContact()">Contact</button>
-                            <button class="btn btn-outline-dark rounded-5 my-2 px-3 btn-lightmode"><i class="bi bi-brightness-high-fill"></i> <i class="bi bi-toggle-off"></i></button>
-                            <button class="btn btn-outline-dark rounded-5 my-2 px-3 btn-darkmode"><i class="bi bi-moon-stars-fill"></i> <i class="bi bi-toggle-on"></i></button>
+                            <div class="btn-lightmode">
+                                <button class="btn btn-outline-dark rounded-5 my-2 px-3" onclick="lightMode()"><i class="bi bi-brightness-high-fill"></i> <i class="bi bi-toggle-off"></i></button>
+                            </div>
+                            <div class="btn-darkmode">
+                                <button class="btn btn-outline-dark rounded-5 my-2 px-3" onclick="darkMode()"><i class="bi bi-moon-stars-fill"></i> <i class="bi bi-toggle-on"></i></button>
+                            </div>
                         </div>
                     </div>
 
@@ -269,19 +273,17 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-4 my-3" id="webdev">
-                                    <a href="#">
                                         <div class="card">
-                                            <img src="assets/img/projects/apk_laundry.png" class="card-img-top" alt="">
+                                            <img src="assets/img/projects/apk_laundry.png" class="card-img-top" alt="" height="110">
                                             <div class="card-body">
                                             <h6 class="card-title fw-semibold text-center">Laundry Application</h6>
                                             </div>
                                         </div>
-                                    </a>
                                     </div>
                                 <div class="col-md-4 my-3" id="webdev">
-                                    <a href="#">
+                                    <a href="https://sembakobuana.com/transaksi/login.php" target="_blank">
                                     <div class="card">
-                                        <img src="assets/img/projects/apk_transaksi.png" class="card-img-top" alt="">
+                                        <img src="assets/img/projects/apk_transaksi.png" class="card-img-top" alt="" height="110">
                                         <div class="card-body">
                                         <h6 class="card-title fw-semibold text-center">Transaction Application</h6>
                                         </div>
@@ -289,9 +291,9 @@
                                     </a>
                                 </div>
                                 <div class="col-md-4 my-3" id="blog">
-                                    <a href="#">
+                                    <a href="https://portofolio-bryan.blogspot.com" target="_blank">
                                     <div class="card">
-                                        <img src="assets/img/projects/basis_data.png" class="card-img-top" alt="">
+                                        <img src="assets/img/projects/basis_data.png" class="card-img-top" alt="" height="110">
                                         <div class="card-body">
                                         <h6 class="card-title fw-semibold text-center">Blog About Database</h6>
                                         </div>
@@ -301,19 +303,19 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-4 my-3" id="webdes">
-                                    <a href="#">
+                                    <a href="https://bryan-eka-santoso.github.io/portfolio-css24" target="_blank">
                                         <div class="card">
-                                            <img src="assets/img/projects/porto_bs.png" class="card-img-top" alt="">
+                                            <img src="assets/img/projects/portfolio_css.png" class="card-img-top" alt="" height="110">
                                             <div class="card-body">
-                                            <h6 class="card-title fw-semibold text-center">Portfolio Bootstrap</h6>
+                                            <h6 class="card-title fw-semibold text-center">Portfolio With HTML CSS</h6>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-md-4 my-3" id="webdes">
-                                    <a href="#">
+                                    <a href="https://sembakobuana.com" target="_blank">
                                         <div class="card">
-                                            <img src="assets/img/projects/tokobuana.png" class="card-img-top" alt="">
+                                            <img src="assets/img/projects/tokobuana.png" class="card-img-top" alt="" height="110">
                                             <div class="card-body">
                                             <h6 class="card-title fw-semibold text-center">Bu Ana Supermarket</h6>
                                             </div>
@@ -321,9 +323,9 @@
                                     </a>
                                 </div>
                                 <div class="col-md-4 my-3" id="webdes">
-                                    <a href="#">
+                                    <a href="https://bryan-eka-santoso.github.io/kedai-teh" target="_blank">
                                         <div class="card">
-                                            <img src="assets/img/projects/kedaiteh.png" class="card-img-top" alt="">
+                                            <img src="assets/img/projects/kedaiteh.png" class="card-img-top" alt="" height="110">
                                             <div class="card-body">
                                             <h6 class="card-title fw-semibold text-center">Tea Market</h6>
                                             </div>
@@ -335,9 +337,29 @@
                                 <div class="col-md-4 my-3" id="webdes">
                                     <a href="https://brianshoes.vercel.app" target="_blank">
                                         <div class="card">
-                                            <img src="assets/img/projects/brianshoes.png" class="card-img-top" alt="">
+                                            <img src="assets/img/projects/brianshoes.png" class="card-img-top" alt="" height="110">
                                             <div class="card-body">
                                             <h6 class="card-title fw-semibold text-center">Brian Shoes</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 my-3" id="cpp">
+                                    <a href="https://github.com/Bryan-Eka-Santoso/ProjectBattleShip/blob/main/README.md" target="_blank">
+                                        <div class="card">
+                                            <img src="assets/img/projects/battleship_game.png" class="card-img-top" alt="" height="110">
+                                            <div class="card-body">
+                                            <h6 class="card-title fw-semibold text-center">Battleship Game</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 my-3" id="cpp">
+                                    <a href="https://github.com/Bryan-Eka-Santoso/snake-gamev2" target="_blank">
+                                        <div class="card">
+                                            <img src="assets/img/projects/snake_game.png" class="card-img-top" alt="" height="110">
+                                            <div class="card-body">
+                                            <h6 class="card-title fw-semibold text-center">Snake Game</h6>
                                             </div>
                                         </div>
                                     </a>
@@ -410,7 +432,7 @@
                     <h3 class="fw-semibold mt-3">My Location</h3>
                     <div class="row">
                         <div class="col-md-12 my-3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.2096098155!2d112.63028152597808!3d-7.275612006214952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1738151617171!5m2!1sid!2sid" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded shadow"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.2096098155!2d112.63028152597808!3d-7.275612006214952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1738151617171!5m2!1sid!2sid" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded shadow"></iframe>
                         </div>
                     </div>
                     <h3 class="fw-semibold mt-3">Contact Form</h3>

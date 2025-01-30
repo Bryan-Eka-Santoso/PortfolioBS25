@@ -69,6 +69,7 @@
         const blog = document.querySelectorAll("#blog");
         const webdes = document.querySelectorAll("#webdes");
         const webdev = document.querySelectorAll("#webdev");
+        const cpp = document.querySelectorAll("#cpp");
 
         function callAll(){
         blog.forEach(element => {
@@ -78,6 +79,9 @@
           element.style.display = "block";
         });
         webdev.forEach(element => {
+          element.style.display = "block";
+        });
+        cpp.forEach(element => {
           element.style.display = "block";
         });
       }
@@ -92,6 +96,9 @@
         webdev.forEach(element => {
           element.style.display = "none";
         });
+        cpp.forEach(element => {
+          element.style.display = "none";
+        });
       }
 
         function callWebDev(){
@@ -103,6 +110,9 @@
         });
         webdev.forEach(element => {
           element.style.display = "block";
+        });
+        cpp.forEach(element => {
+          element.style.display = "none";
         });
       }
 
@@ -116,6 +126,9 @@
         webdev.forEach(element => {
           element.style.display = "none";
         });
+        cpp.forEach(element => {
+          element.style.display = "block";
+        });
       }
 
         function callBlog(){
@@ -126,6 +139,9 @@
           element.style.display = "none";
         });
         webdev.forEach(element => {
+          element.style.display = "none";
+        });
+        cpp.forEach(element => {
           element.style.display = "none";
         });
       }
@@ -193,6 +209,35 @@
       });
       organizations.forEach(element => {
         element.style.display = "block";
+      });
+    }
+    // End
+    // Light and dark mode
+    const lightModeBtn = document.querySelectorAll(".btn-lightmode");
+    const darkModeBtn = document.querySelectorAll(".btn-darkmode");
+    const body = document.querySelectorAll("body");
+
+    function darkMode(){
+      lightModeBtn.forEach(element => {
+        element.style.display = "block";
+      });
+      darkModeBtn.forEach(element => {
+        element.style.display = "none";
+      });
+      body.forEach(element => {
+        element.style.backgroundColor = "var(--light)";
+      });
+    }
+    
+    function lightMode(){
+      lightModeBtn.forEach(element => {
+        element.style.display = "none";
+      });
+      darkModeBtn.forEach(element => {
+        element.style.display = "block";
+      });
+      body.forEach(element => {
+        element.style.backgroundColor = "var(--dark)";
       });
     }
     // End
