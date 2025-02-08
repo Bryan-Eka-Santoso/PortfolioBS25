@@ -73,7 +73,7 @@ section#contact-id {
     display: none;
 }
 
-.icons-sosmed {
+/* .icons-sosmed {
     font-size: 1.3rem;
     padding: 0.5rem 0.8rem;
     margin: 0 0.2rem;
@@ -86,7 +86,7 @@ section#contact-id {
     border: 1px solid var(--dark);
     background-color: var(--light);
     color: var(--dark);
-}
+} */
 
 .btn-en {
     display: none;

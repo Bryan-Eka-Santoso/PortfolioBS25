@@ -281,8 +281,13 @@
     const lightModeBtn = document.querySelectorAll(".btn-lightmode");
     const darkModeBtn = document.querySelectorAll(".btn-darkmode");
     const body = document.querySelectorAll("body");
+    const btnMenu = document.querySelectorAll('.btn-outline-dark');
+    const link = document.querySelectorAll('a');
+    const numberTimeline = document.querySelectorAll('.number-timeline');
+    const ol = document.querySelectorAll('ol');
 
-    function darkMode(){
+    function lightMode(){
+      document.documentElement.setAttribute('data-bs-theme', 'light');
       lightModeBtn.forEach(element => {
         element.style.display = "block";
       });
@@ -292,9 +297,25 @@
       body.forEach(element => {
         element.style.backgroundColor = "var(--light)";
       });
+      btnMenu.forEach(element => {
+        element.classList.remove("btn-outline-light");
+        element.classList.add("btn-outline-dark");
+      });
+      link.forEach(element => {
+        element.style.color = "var(--dark)";
+      });
+      numberTimeline.forEach(element => {
+        element.style.color = "var(--light)";
+        element.style.backgroundColor = "var(--dark)";
+      });
+      ol.forEach(element => {
+        element.style.borderLeft = "2px solid var(--dark)";
+      });
     }
     
-    function lightMode(){
+    function darkMode(){
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+
       lightModeBtn.forEach(element => {
         element.style.display = "none";
       });
@@ -303,6 +324,20 @@
       });
       body.forEach(element => {
         element.style.backgroundColor = "var(--dark)";
+      });
+      btnMenu.forEach(element => {
+        element.classList.remove("btn-outline-dark");
+        element.classList.add("btn-outline-light");
+      });
+      link.forEach(element => {
+        element.style.color = "var(--light)";
+      });
+      numberTimeline.forEach(element => {
+        element.style.color = "var(--dark)";
+        element.style.backgroundColor = "var(--light)";
+      });
+      ol.forEach(element => {
+        element.style.borderLeft = "2px solid var(--light)";
       });
     }
     // End
@@ -359,3 +394,4 @@
         element.style.display = "none";
       });
     }
+    // End
