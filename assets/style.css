@@ -84,3 +84,11 @@ section#contact {
     background-color: var(--light);
     color: var(--dark);
 }
+
+.btn-en {
+    display: none;
+}
+
+.text-en {
+    display: none;
+}
