@@ -64,9 +64,12 @@ iframe {
     width: 100%;
 }
 
-section#resume,
-section#projects,
-section#contact {
+section#resume-en,
+section#projects-en,
+section#contact-en,
+section#resume-id,
+section#projects-id,
+section#contact-id {
     display: none;
 }
 
@@ -89,6 +92,6 @@ section#contact {
     display: none;
 }
 
-.text-en {
+.text-id {
     display: none;
 }

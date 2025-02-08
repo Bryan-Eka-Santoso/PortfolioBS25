@@ -1,65 +1,130 @@
         // For All Pages
-        const about = document.querySelectorAll("#about");
-        const resume = document.querySelectorAll("#resume");
-        const projects = document.querySelectorAll("#projects");
-        const contact = document.querySelectorAll("#contact");
+        const aboutEn = document.querySelectorAll("#about-en");
+        const resumeEn = document.querySelectorAll("#resume-en");
+        const projectsEn = document.querySelectorAll("#projects-en");
+        const contactEn = document.querySelectorAll("#contact-en");
+
+        const aboutId = document.querySelectorAll("#about-id");
+        const resumeId = document.querySelectorAll("#resume-id");
+        const projectsId = document.querySelectorAll("#projects-id");
+        const contactId = document.querySelectorAll("#contact-id");
 
         function clickAbout(){
-          about.forEach(element => {
+          aboutEn.forEach(element => {
             element.style.display = "block";
           });
-          resume.forEach(element => {
+          resumeEn.forEach(element => {
             element.style.display = "none";
           });
-          projects.forEach(element => {
+          projectsEn.forEach(element => {
             element.style.display = "none";
           });
-          contact.forEach(element => {
+          contactEn.forEach(element => {
             element.style.display = "none";
           });
         }
 
         function clickResume(){
-          about.forEach(element => {
+          aboutEn.forEach(element => {
             element.style.display = "none";
           });
-          resume.forEach(element => {
+          resumeEn.forEach(element => {
             element.style.display = "block";
           });
-          projects.forEach(element => {
+          projectsEn.forEach(element => {
             element.style.display = "none";
           });
-          contact.forEach(element => {
+          contactEn.forEach(element => {
             element.style.display = "none";
           });
         }
 
         function clickProjects(){
-          about.forEach(element => {
+          aboutEn.forEach(element => {
             element.style.display = "none";
           });
-          resume.forEach(element => {
+          resumeEn.forEach(element => {
             element.style.display = "none";
           });
-          projects.forEach(element => {
+          projectsEn.forEach(element => {
             element.style.display = "block";
           });
-          contact.forEach(element => {
+          contactEn.forEach(element => {
             element.style.display = "none";
           });
         }
 
         function clickContact(){
-          about.forEach(element => {
+          aboutEn.forEach(element => {
             element.style.display = "none";
           });
-          resume.forEach(element => {
+          resumeEn.forEach(element => {
             element.style.display = "none";
           });
-          projects.forEach(element => {
+          projectsEn.forEach(element => {
             element.style.display = "none";
           });
-          contact.forEach(element => {
+          contactEn.forEach(element => {
+            element.style.display = "block";
+          });
+        }
+
+        function clickAboutId(){
+          aboutId.forEach(element => {
+            element.style.display = "block";
+          });
+          resumeId.forEach(element => {
+            element.style.display = "none";
+          });
+          projectsId.forEach(element => {
+            element.style.display = "none";
+          });
+          contactId.forEach(element => {
+            element.style.display = "none";
+          });
+        }
+
+        function clickResumeId(){
+          aboutId.forEach(element => {
+            element.style.display = "none";
+          });
+          resumeId.forEach(element => {
+            element.style.display = "block";
+          });
+          projectsId.forEach(element => {
+            element.style.display = "none";
+          });
+          contactId.forEach(element => {
+            element.style.display = "none";
+          });
+        }
+
+        function clickProjectsId(){
+          aboutId.forEach(element => {
+            element.style.display = "none";
+          });
+          resumeId.forEach(element => {
+            element.style.display = "none";
+          });
+          projectsId.forEach(element => {
+            element.style.display = "block";
+          });
+          contactId.forEach(element => {
+            element.style.display = "none";
+          });
+        }
+
+        function clickContactId(){
+          aboutId.forEach(element => {
+            element.style.display = "none";
+          });
+          resumeId.forEach(element => {
+            element.style.display = "none";
+          });
+          projectsId.forEach(element => {
+            element.style.display = "none";
+          });
+          contactId.forEach(element => {
             element.style.display = "block";
           });
         }
@@ -241,3 +306,56 @@
       });
     }
     // End
+    // En and id mode language
+    const enBtn = document.querySelectorAll(".btn-en");
+    const idBtn = document.querySelectorAll(".btn-id");
+    const textEn = document.querySelectorAll(".text-en");
+    const textId = document.querySelectorAll(".text-id");
+    
+    function enMode(){
+      enBtn.forEach(element => {
+        element.style.display = "none";
+      });
+      idBtn.forEach(element => {
+        element.style.display = "block";
+      });
+      textEn.forEach(element => {
+        element.style.display = "block";
+      });
+      textId.forEach(element => {
+        element.style.display = "none";
+      });
+      resumeEn.forEach(element => {
+        element.style.display = "none";
+      });
+      projectsEn.forEach(element => {
+        element.style.display = "none";
+      });
+      contactEn.forEach(element => {
+        element.style.display = "none";
+      });
+    }
+    
+    function idMode(){
+      enBtn.forEach(element => {
+        element.style.display = "block";
+      });
+      idBtn.forEach(element => {
+        element.style.display = "none";
+      });
+      textEn.forEach(element => {
+        element.style.display = "none";
+      });
+      textId.forEach(element => {
+        element.style.display = "block";
+      });
+      resumeId.forEach(element => {
+        element.style.display = "none";
+      });
+      projectsId.forEach(element => {
+        element.style.display = "none";
+      });
+      contactId.forEach(element => {
+        element.style.display = "none";
+      });
+    }

@@ -16,7 +16,8 @@
                 <div class="card px-5 pt-5 pb-3">
                     <img src="assets/img/profile-img.jpg" alt="profile-img" class="rounded-4 shadow-lg">
                     <h3 class="text-center mt-3 fw-semibold">Bryan Eka Santoso</h3>
-                    <p class="text-center">Web Developer</p>
+                    <p class="text-center text-en">Web Developer</p>
+                    <p class="text-center text-id">Pengembang Web</p>
     
                     <hr>
     
@@ -25,9 +26,20 @@
                             <a href="#" class="icons"><i class="bi bi-envelope-at-fill"></i></a>
                         </div>
                         <div class="col-10">
-                                <span class="fw-semibold">Email</span>
-                                <br>
-                                bryanekasantoso@gmail.com
+                            <div class="text-en">
+                                <span class="fw-semibold">
+                                    Email Address
+                                </span>
+                                    <br>
+                                    bryanekasantoso@gmail.com
+                                </div>
+                            <div class="text-id">
+                                <span class="fw-semibold">
+                                    Alamat Email
+                                </span>
+                                    <br>
+                                    bryanekasantoso@gmail.com
+                                </div>
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center align-items-center my-2">
@@ -35,9 +47,20 @@
                             <a href="#" class="icons"><i class="bi bi-phone"></i></a>
                         </div>
                         <div class="col-10">
-                                <span class="fw-semibold">Phone</span>
-                                <br>
-                                +(62) 8122 5022 214
+                            <div class="text-en">
+                                <span class="fw-semibold">
+                                    Phone
+                                </span>
+                                    <br>
+                                    +(62) 8122 5022 214
+                                </div>
+                                <div class="text-id">
+                                    <span class="fw-semibold">
+                                        No. Telp
+                                    </span>
+                                        <br>
+                                        +(62) 8122 5022 214
+                                    </div>
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center align-items-center my-2">
@@ -45,9 +68,20 @@
                             <a href="#" class="icons"><i class="bi bi-calendar2-week"></i></a>
                         </div>
                         <div class="col-10">
-                                <span class="fw-semibold">Birthday</span>
-                                <br>
-                                Oct 25, 2005
+                            <div class="text-en">
+                                <span class="fw-semibold">
+                                    Birthday
+                                </span>
+                                    <br>
+                                    Oct 25, 2005
+                                </div>
+                            <div class="text-id">
+                                <span class="fw-semibold">
+                                    Hari Ulang Tahun
+                                </span>
+                                    <br>
+                                    25 Oktober 2005
+                                </div>
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center align-items-center my-2">
@@ -55,9 +89,20 @@
                             <a href="#" class="icons"><i class="bi bi-geo-alt-fill"></i></a>
                         </div>
                         <div class="col-10">
-                                <span class="fw-semibold">Location</span>
-                                <br>
-                                Surabaya, Indonesia
+                                <div class="text-en">
+                                <span class="fw-semibold">
+                                    Location
+                                </span>
+                                    <br>
+                                    Surabaya, Indonesia
+                                </div>
+                                <div class="text-id">
+                                    <span class="fw-semibold">
+                                        Lokasi
+                                    </span>
+                                        <br>
+                                        Surabaya, Indonesia
+                                    </div>
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center align-items-center my-4">
@@ -80,41 +125,45 @@
                             <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickContact()">Contact</button>
                             <div class="btn-lightmode">
                                 <button class="btn btn-outline-dark rounded-5 my-2 px-3" onclick="lightMode()"><i class="bi bi-brightness-high-fill"></i> <i class="bi bi-toggle-off"></i></button>
-                                <button class="btn btn-outline-dark rounded-5 my-2 px-3 btn-en" onclick="enMode()">EN</button>
-                                <button class="btn btn-outline-dark rounded-5 my-2 px-3 btn-id" onclick="idMode()">ID</button>
                             </div>
                             <div class="btn-darkmode">
                                 <button class="btn btn-outline-dark rounded-5 my-2 px-3" onclick="darkMode()"><i class="bi bi-moon-stars-fill"></i> <i class="bi bi-toggle-on"></i></button>
-                                <button class="btn btn-outline-dark rounded-5 my-2 px-3 btn-en" onclick="enMode()">EN</button>
-                                <button class="btn btn-outline-dark rounded-5 my-2 px-3 btn-id" onclick="idMode()">ID</button>
+                            </div>
+                            <div class="btn-en">
+                                <button class="btn btn-outline-dark rounded-5 my-2 px-3" onclick="enMode()"><i class="bi bi-translate"></i> EN</button>
+                            </div>
+                            <div class="btn-id">
+                                <button class="btn btn-outline-dark rounded-5 my-2 px-3" onclick="idMode()"><i class="bi bi-translate"></i> ID</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="row text-id">
-                        <div class="col-md-12 text-end">
-                            <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickAbout()">Tentang</button>
-                            <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickResume()">Ringkasan</button>
-                            <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickProjects()">Proyek & Prestasi</button>
-                            <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickContact()">Kontak</button>
+                        <div class="col-md-12 text-end">    
+                            <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickAboutId()">Tentang</button>
+                            <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickResumeId()">Ringkasan</button>
+                            <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickProjectsId()">Proyek & Prestasi</button>
+                            <button class="btn btn-outline-dark rounded-5 my-2" onclick="clickContactId()">Kontak</button>
                             <div class="btn-lightmode">
                                 <button class="btn btn-outline-dark rounded-5 my-2 px-3" onclick="lightMode()"><i class="bi bi-brightness-high-fill"></i> <i class="bi bi-toggle-off"></i></button>
-                                <button class="btn btn-outline-dark rounded-5 my-2 px-3 btn-en" onclick="enMode()">EN</button>
-                                <button class="btn btn-outline-dark rounded-5 my-2 px-3 btn-id" onclick="idMode()">ID</button>
                             </div>
                             <div class="btn-darkmode">
                                 <button class="btn btn-outline-dark rounded-5 my-2 px-3" onclick="darkMode()"><i class="bi bi-moon-stars-fill"></i> <i class="bi bi-toggle-on"></i></button>
-                                <button class="btn btn-outline-dark rounded-5 my-2 px-3 btn-en" onclick="enMode()">EN</button>
-                                <button class="btn btn-outline-dark rounded-5 my-2 px-3 btn-id" onclick="idMode()">ID</button>
+                            </div>
+                            <div class="btn-en">
+                                <button class="btn btn-outline-dark rounded-5 my-2 px-3" onclick="enMode()"><i class="bi bi-translate"></i> EN</button>
+                            </div>
+                            <div class="btn-id">
+                                <button class="btn btn-outline-dark rounded-5 my-2 px-3" onclick="idMode()"><i class="bi bi-translate"></i> ID</button>
                             </div>
                         </div>
                     </div>
 
-                    <section id="about" class="text-en">
+                    <section id="about-en" class="text-en">
                         <h2 class="fw-semibold mt-3"><i class="bi bi-person-fill"></i> About Me</h2>
                         <hr>
                         <p>
-                            Hello! My name is Bryan Eka Santoso, and I am a Web Developer based in Surabaya, Indonesia. I graduated from SMK Krian 1 Sidoarjo, specializing in Software Engineering. Currently, I am continuing my studies in Informatics at the Institut Sains dan Teknologi Terpadu Surabaya.
+                            Hello! My name is Bryan Eka Santoso, and I am a Web Developer based in Surabaya, Indonesia. I graduated from SMK Krian 1 Sidoarjo, specializing in Software Engineering. Currently, I am continuing my studies in Informatics at the Integrated Science and Technology Institute Surabaya.
                         </p>
 
                         <h3 class="fw-semibold mt-3">What I'm Doing</h3>
@@ -123,7 +172,7 @@
                                 <div class="card p-3">
                                     <h4 class="fw-semibold"><i class="bi bi-image-fill"></i> Web Design</h4>
                                     <p>
-                                        Modern and high-quality design.
+                                        Modern and quality design.
                                     </p>
                                 </div>
                             </div>
@@ -149,14 +198,14 @@
                                 <div class="card p-3">
                                     <h4 class="fw-semibold"><i class="bi bi-pc-display"></i> Informatics Studies</h4>
                                     <p>
-                                        Software and web development focus.
+                                        Software and web development.
                                     </p>
                                 </div>
                             </div>
                         </div>              
                     </section>
 
-                    <section id="about" class="text-id">
+                    <section id="about-id" class="text-id">
                         <h2 class="fw-semibold mt-3"><i class="bi bi-person-fill"></i> Tentang Saya</h2>
                         <hr>
                         <p>
@@ -169,7 +218,7 @@
                                 <div class="card p-3">
                                     <h4 class="fw-semibold"><i class="bi bi-image-fill"></i> Desain Web</h4>
                                     <p>
-                                        Desain modern dan berkualitas tinggi.
+                                        Desain modern dan berkualitas.
                                     </p>
                                 </div>
                             </div>
@@ -185,9 +234,9 @@
                         <div class="row">
                             <div class="col-md-6 my-3">
                                 <div class="card p-3">
-                                    <h4 class="fw-semibold"><i class="bi bi-database-fill-gear"></i> Rekayasa Basis Data</h4>
+                                    <h4 class="fw-semibold"><i class="bi bi-database-fill-gear"></i> Basis Data</h4>
                                     <p>
-                                        Solusi basis data yang direkayasa.
+                                        Solusi basis data yang terstruktur.
                                     </p>
                                 </div>
                             </div>
@@ -195,14 +244,14 @@
                                 <div class="card p-3">
                                     <h4 class="fw-semibold"><i class="bi bi-pc-display"></i> Studi Informatika</h4>
                                     <p>
-                                        Fokus pengembangan perangkat lunak dan web.
+                                        Aplikasi dan pengembangan web.
                                     </p>
                                 </div>
                             </div>
                         </div>              
                     </section>
 
-                    <section id="resume">
+                    <section id="resume-en" class="text-en">
                         <h2 class="fw-semibold mt-3"><i class="bi bi-card-text"></i> Resume</h2>
 
                         <hr>
@@ -324,7 +373,131 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="projects">
+
+                    <section id="resume-id" class="text-id">
+                        <h2 class="fw-semibold mt-3"><i class="bi bi-card-text"></i> Ringkasan</h2>
+
+                        <hr>
+
+                        <h3 class="fw-semibold mt-3">Pendidikan</h3>
+                        <div class="row">
+                            <div class="col-md-12 my-3">
+                                <ol>
+                                    <a href="https://maps.app.goo.gl/FX7X3ZFfz7HafhMh6" class="number-timeline" target="_blank">1</a>
+                                    <li>
+                                        <h6 class="fw-semibold"><a href="https://maps.app.goo.gl/FX7X3ZFfz7HafhMh6" target="_blank">Institut Sains Dan Teknologi Surabaya</a></h6>
+                                        <p>
+                                            2024 - Sekarang
+                                            <br>
+                                            Jurusan Informatika
+                                            <br>
+                                            <br>
+                                            Pada semester pertama ini, saya sedang mempelajari algoritma pemrograman dan juga diajari bagaimana cara membuat program dan permainan menggunakan C++. Selain itu, saya juga mempelajari sistem digital, yang melibatkan perancangan dan pembuatan rangkaian yang memproses informasi biner.
+                                        </p>
+                                        <br>
+                                    </li>
+                                    <li>
+                                        <a href="https://maps.app.goo.gl/TUR6bsLgXLj7zVqdA" class="number-timeline" target="_blank">2</a>
+                                        <h6 class="fw-semibold"><a href="https://maps.app.goo.gl/TUR6bsLgXLj7zVqdA" target="_blank">SMK Krian 1 Sidoarjo</a></h6>
+                                        <p>
+                                            2021 - 2024
+                                            <br>
+                                            Jurusan Rekayasa Perangkat Lunak
+                                            <br>
+                                            <br>
+                                            Selama saya di SMA, saya fokus untuk mempelajari bagaimana mengembangkan berbagai aplikasi yang dirancang untuk mempermudah pengelolaan kumpulan data.
+                                        </p>
+                                        <br>
+                                    </li>
+                                    <li>
+                                        <a href="https://maps.app.goo.gl/arrVfku7TMJKpauS7" class="number-timeline" target="_blank">3</a>
+                                        <h6 class="fw-semibold"><a href="https://maps.app.goo.gl/arrVfku7TMJKpauS7" target="_blank">SMPK St. Yustinus de Yacobis</a></h6>
+                                        <p>
+                                            2018 - 2021
+                                            <br>
+                                            <br>
+                                            Selama saya di SMP, saya cukup aktif di organisasi. Saya bergabung dengan pramuka sebagai anggota tim inti dan juga menjabat sebagai ketua OSIS. Saya belajar bagaimana bekerja sama dengan orang lain, menangani acara bersama, dan bertanggung jawab dalam menyelenggarakan kegiatan.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <h3 class="fw-semibold mt-3">Pengalaman</h3>
+                        <div class="row">
+                            <div class="col-md-12 my-3">
+                                <ol>
+                                    <a href="#" class="number-timeline" data-bs-toggle="modal" data-bs-target="#internship1">1</a>
+                                    <li>
+                                        <h6 class="fw-semibold"><a href="#" data-bs-toggle="modal" data-bs-target="#internship1">Pengalaman Magang Di PT. Multi Manao Indonesia</a></h6>
+                                        <p>
+                                            2022 - 2023
+                                            <br>
+                                            Sebagai Pengembang Tampilan & Struktur Basis Data
+                                            <br>
+                                            <br>
+                                            Saya mengerjakan proyek aplikasi peminjaman barang sebagai Insinyur Basis Data. Tugas saya meliputi berdiskusi dengan klien mengenai struktur data yang tepat untuk mengelola semua barang dalam sistem peminjaman. Saya juga bertanggung jawab untuk merancang antarmuka aplikasi agar memudahkan pengguna dalam mengelola data peminjaman dan pengembalian. <span class="text-primary readmore" onclick="clickIntership1()">Selengkapnya.</span>
+                                            <br>
+                                            <div class="more-internship1">
+                                                Selain itu, saya diberikan tugas untuk memeriksa dan mengevaluasi kondisi PC untuk menentukan mana yang masih dapat digunakan dan mana yang tidak. Saya juga terlibat dalam memeriksa, memperbaiki, dan mengatur jaringan untuk perangkat yang memerlukan konektivitas jaringan di pabrik, dengan tujuan untuk memastikan manajemen perangkat yang lebih efisien.
+                                            </div>
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <h3 class="fw-semibold mt-3">Organisasi</h3>
+                            <div class="row">
+                                <div class="col-md-12 my-3">
+                                    <ol>
+                                        <a href="#" class="number-timeline" data-bs-toggle="modal" data-bs-target="#scout">1</a>
+                                        <li>
+                                            <h6 class="fw-semibold"><a href="#" data-bs-toggle="modal" data-bs-target="#scout">Pramuka</a></h6>
+                                            <p>
+                                                2022 - 2023
+                                                <br>
+                                                Anggota
+                                            </p>
+                                        </li>
+                                        <a href="#" class="number-timeline" data-bs-toggle="modal" data-bs-target="#osis">2</a>
+                                        <li>
+                                            <h6 class="fw-semibold"><a href="#" data-bs-toggle="modal" data-bs-target="#osis">OSIS</a></h6>
+                                            <p>
+                                                2022 - 2023
+                                                <br>
+                                                Ketua OSIS
+                                            </p>
+                                        </li>
+                                        <a href="#" class="number-timeline" data-bs-toggle="modal" data-bs-target="#osis">3</a>
+                                        <li>
+                                            <h6 class="fw-semibold"><a href="#" data-bs-toggle="modal" data-bs-target="#osis">OSIS</a></h6>
+                                            <p>
+                                                2022 - 2023
+                                                <br>
+                                                Anggota
+                                            </p>
+                                        </li>
+                                        <a href="#" class="number-timeline" data-bs-toggle="modal" data-bs-target="#himafor">4</a>
+                                        <li>
+                                            <h6 class="fw-semibold"><a href="#" data-bs-toggle="modal" data-bs-target="#himafor">Himpunan Informatika</a></h6>
+                                            <p>
+                                                2024 - Sekarang
+                                                <br>
+                                                Anggota Dari Divisi IT
+                                            </p>
+                                        </li>
+                                        <p class="number-timeline">5</p>
+                                        <li>
+                                            <h6 class="fw-semibold">Asisten Laboratorium Junior</a></h6>
+                                            <p>
+                                                2024 - Sekarang
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="projects-en" class="text-en">
                             <h2 class="fw-semibold mt-3"><i class="bi bi-folder"></i> Projects & Achievements</h2>
 
                             <hr>
@@ -409,7 +582,7 @@
                                         <div class="card">
                                             <img src="assets/img/projects/brianshoes.png" class="card-img-top" alt="" height="110">
                                             <div class="card-body">
-                                            <h6 class="card-title fw-semibold text-center">Brian Shoes</h6>
+                                            <h6 class="card-title fw-semibold text-center">Shoes E-Commerce</h6>
                                             </div>
                                         </div>
                                     </a>
@@ -493,8 +666,180 @@
                             </div>
                         </div>
                     </div> 
-                </section>
-                <section id="contact">
+                        </section>
+
+                        <section id="projects-id" class="text-id">
+                            <h2 class="fw-semibold mt-3"><i class="bi bi-folder"></i> Proyek & Prestasi</h2>
+
+                            <hr>
+
+                            <h3 class="fw-semibold mt-3">Proyek Saya</h3>
+                            <div class="row">
+                                <div class="col-md-12">                      
+                                    <div class="input-group text-center my-2">
+                                        <button class="btn btn-outline-dark rounded-start-5 me-2 my-2" onclick="callAll()">Semua</button>
+                                        <button class="btn btn-outline-dark me-2 my-2" onclick="callWebDes()">Web Desain</button>
+                                        <button class="btn btn-outline-dark me-2 my-2" onclick="callWebDev()">Pengembangan Web</button>
+                                        <button class="btn btn-outline-dark me-2 my-2" onclick="callCpp()">C++ Proyek</button>
+                                        <button class="btn btn-outline-dark rounded-end-5 my-2" onclick="callBlog()">Blog</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 my-3" id="webdev">
+                                        <div class="card">
+                                            <img src="assets/img/projects/apk_laundry.png" class="card-img-top" alt="" height="110">
+                                            <div class="card-body">
+                                            <h6 class="card-title fw-semibold text-center">Aplikasi Laundry</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="col-md-4 my-3" id="webdev">
+                                    <a href="https://sembakobuana.com/transaksi/login.php" target="_blank">
+                                    <div class="card">
+                                        <img src="assets/img/projects/apk_transaksi.png" class="card-img-top" alt="" height="110">
+                                        <div class="card-body">
+                                        <h6 class="card-title fw-semibold text-center">Aplikasi Transaction</h6>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 my-3" id="blog">
+                                    <a href="https://portofolio-bryan.blogspot.com" target="_blank">
+                                    <div class="card">
+                                        <img src="assets/img/projects/basis_data.png" class="card-img-top" alt="" height="110">
+                                        <div class="card-body">
+                                        <h6 class="card-title fw-semibold text-center">Blog Tentang Basis Data</h6>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 my-3" id="webdes">
+                                    <a href="https://bryan-eka-santoso.github.io/portfolio-css24" target="_blank">
+                                        <div class="card">
+                                            <img src="assets/img/projects/portfolio_css.png" class="card-img-top" alt="" height="110">
+                                            <div class="card-body">
+                                            <h6 class="card-title fw-semibold text-center">Portfolio HTML CSS</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 my-3" id="webdes">
+                                    <a href="https://sembakobuana.com" target="_blank">
+                                        <div class="card">
+                                            <img src="assets/img/projects/tokobuana.png" class="card-img-top" alt="" height="110">
+                                            <div class="card-body">
+                                            <h6 class="card-title fw-semibold text-center">Toko Bu Ana</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 my-3" id="webdes">
+                                    <a href="https://bryan-eka-santoso.github.io/kedai-teh" target="_blank">
+                                        <div class="card">
+                                            <img src="assets/img/projects/kedaiteh.png" class="card-img-top" alt="" height="110">
+                                            <div class="card-body">
+                                            <h6 class="card-title fw-semibold text-center">Kedai Teh</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 my-3" id="webdes">
+                                    <a href="https://brianshoes.vercel.app" target="_blank">
+                                        <div class="card">
+                                            <img src="assets/img/projects/brianshoes.png" class="card-img-top" alt="" height="110">
+                                            <div class="card-body">
+                                            <h6 class="card-title fw-semibold text-center">Penjualan Sepatu</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 my-3" id="cpp">
+                                    <a href="https://github.com/Bryan-Eka-Santoso/ProjectBattleShip/blob/main/README.md" target="_blank">
+                                        <div class="card">
+                                            <img src="assets/img/projects/battleship_game.png" class="card-img-top" alt="" height="110">
+                                            <div class="card-body">
+                                            <h6 class="card-title fw-semibold text-center">Game Perang Kapal</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 my-3" id="cpp">
+                                    <a href="https://github.com/Bryan-Eka-Santoso/snake-gamev2" target="_blank">
+                                        <div class="card">
+                                            <img src="assets/img/projects/snake_game.png" class="card-img-top" alt="" height="110">
+                                            <div class="card-body">
+                                            <h6 class="card-title fw-semibold text-center">Game Ular</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="fw-semibold mt-3">Prestasi Saya</h3>
+                            <div class="row">
+                                <div class="col-md-12 my-3">
+                                    <ol>
+                                        <p class="number-timeline">1</p>
+                                        <li>
+                                            <h6 class="fw-semibold">Bidang Organisasi</a></h6>
+                                            <p>
+                                                Di Tahun 2021
+                                            </p>
+                                        </li>
+                                        <a href="https://radarjatim.id/siswa-smk-krian-1-raih-juara-ifest-competition-umsida-2023" class="number-timeline" target="_blank">2</a>
+                                        <li>
+                                            <h6 class="fw-semibold"><a href="https://radarjatim.id/siswa-smk-krian-1-raih-juara-ifest-competition-umsida-2023" target="_blank">Juara 2 Website Desain Di UMSIDA Informatika Festival</a></h6>
+                                            <p>
+                                                Di Tahun 2023
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                        </div>
+                        <h3 class="fw-semibold mt-3">Sertifikat Saya</h3>
+                        <div class="row">
+                            <div class="col-md-12">                      
+                                <div class="input-group text-center my-2">
+                                    <button class="btn btn-outline-dark rounded-start-5 me-2 my-2" onclick="clickAll()">Semua</button>
+                                    <button class="btn btn-outline-dark me-2 my-2" onclick="clickAchievements()">Prestasi</button>
+                                    <button class="btn btn-outline-dark me-2 my-2" onclick="clickEvents()">Acara</button>
+                                    <button class="btn btn-outline-dark rounded-end-5 my-2" onclick="clickOrganizations()">Organisasi</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-md-4 my-3" id="events">
+                            <div class="card">
+                                <img src="assets/img/certificate/dicoding1.jpg" class="card-img-top" alt="dicoding">
+                                <div class="card-body">
+                                <h6 class="card-title fw-semibold text-center">Seminar Pelatihan Dicoding Flexbox</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3" id="events">
+                            <div class="card">
+                                <img src="assets/img/certificate/gdsc1.jpg" class="card-img-top" alt="gdsc">
+                                <div class="card-body">
+                                <h6 class="card-title fw-semibold text-center">Lokakarya Membangun Pemimpin Masa Depan</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3" id="events">
+                            <div class="card">
+                                <img src="assets/img/certificate/itbox1.jpg" class="card-img-top" alt="itbox">
+                                <div class="card-body">
+                                <h6 class="card-title fw-semibold text-center">Seminar ITBox Masa Depan Pengembang Web</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                        </section>
+
+                <section id="contact-en" class="text-en">
                     <h2 class="fw-semibold mt-3"><i class="bi bi-card-text"></i> Contact</h2>
 
                     <hr>
@@ -523,6 +868,37 @@
                     <button type="submit" class="btn btn-dark float-end"><i class="bi bi-send"></i> Send Message</button>
                 </form>
                 </section>
+
+                <section id="contact-id" class="text-id">
+                    <h2 class="fw-semibold mt-3"><i class="bi bi-card-text"></i> Kontak</h2>
+
+                    <hr>
+
+                    <h3 class="fw-semibold mt-3">Lokasi Saya</h3>
+                    <div class="row">
+                        <div class="col-md-12 my-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.2096098155!2d112.63028152597808!3d-7.275612006214952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1738151617171!5m2!1sid!2sid" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded shadow"></iframe>
+                        </div>
+                    </div>
+                    <h3 class="fw-semibold mt-3">Formulir Kontak</h3>
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-md-6 my-3">
+                                <input type="text" class="form-control" name="f_name" id="f_name" placeholder="Nama Lengkap" autocomplete="off" required>
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Alamat Email" autocomplete="off" required>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 my-3">
+                            <textarea class="form-control" name="message" id="message" placeholder="Pesan Anda" autocomplete="off"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark float-end"><i class="bi bi-send"></i> Kirim Pesan</button>
+                </form>
+                </section>
+
                 </div>
             </div>
         </div>
@@ -532,7 +908,8 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5 fw-bold" id="internship1">Image Internship Experience</h1>
+            <h1 class="modal-title fs-5 fw-bold text-en" id="internship1">Image Internship Experience</h1>
+            <h1 class="modal-title fs-5 fw-bold text-id" id="internship1">Foto Pengalaman Magang</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -558,7 +935,8 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5 fw-bold" id="scout">Images Scoout Organization</h1>
+            <h1 class="modal-title fs-5 fw-bold text-en" id="scout">Images Scoout Organization</h1>
+            <h1 class="modal-title fs-5 fw-bold text-id" id="scout">Foto Organisasi Pramuka</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -584,7 +962,8 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5 fw-bold" id="osis">Images Student Council Organization</h1>
+            <h1 class="modal-title fs-5 fw-bold text-en" id="osis">Images Student Council Organization</h1>
+            <h1 class="modal-title fs-5 fw-bold text-id" id="osis">Foto Organisasi OSIS</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -610,7 +989,8 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5 fw-bold" id="himafor">Images Informatics Student Association Organization</h1>
+            <h1 class="modal-title fs-5 fw-bold text-en" id="himafor">Images Informatics Student Association Organization</h1>
+            <h1 class="modal-title fs-5 fw-bold text-id" id="himafor">Foto Organisasi Himpunan Informatika</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
