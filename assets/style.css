@@ -88,7 +88,7 @@ section#contact-id {
     color: var(--dark);
 } */
 
-.btn-en {
+.btn-en, .btn-resume, .btn-projects, .btn-contact {
     display: none;
 }
 

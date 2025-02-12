@@ -9,6 +9,11 @@
         const projectsId = document.querySelectorAll("#projects-id");
         const contactId = document.querySelectorAll("#contact-id");
 
+        const aboutBtn = document.querySelectorAll(".btn-about");
+        const resumeBtn = document.querySelectorAll(".btn-resume");
+        const projectsBtn = document.querySelectorAll(".btn-projects");
+        const contactBtn = document.querySelectorAll(".btn-contact");
+
         function clickAbout(){
           aboutEn.forEach(element => {
             element.style.display = "block";
@@ -20,6 +25,18 @@
             element.style.display = "none";
           });
           contactEn.forEach(element => {
+            element.style.display = "none";
+          });
+          aboutBtn.forEach(element => {
+            element.style.display = "block";
+          });
+          resumeBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          projectsBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          contactBtn.forEach(element => {
             element.style.display = "none";
           });
         }
@@ -37,6 +54,18 @@
           contactEn.forEach(element => {
             element.style.display = "none";
           });
+          aboutBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          resumeBtn.forEach(element => {
+            element.style.display = "block";
+          });
+          projectsBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          contactBtn.forEach(element => {
+            element.style.display = "none";
+          });
         }
 
         function clickProjects(){
@@ -50,6 +79,18 @@
             element.style.display = "block";
           });
           contactEn.forEach(element => {
+            element.style.display = "none";
+          });
+          aboutBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          resumeBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          projectsBtn.forEach(element => {
+            element.style.display = "block";
+          });
+          contactBtn.forEach(element => {
             element.style.display = "none";
           });
         }
@@ -67,6 +108,18 @@
           contactEn.forEach(element => {
             element.style.display = "block";
           });
+          aboutBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          resumeBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          projectsBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          contactBtn.forEach(element => {
+            element.style.display = "block";
+          });
         }
 
         function clickAboutId(){
@@ -80,6 +133,18 @@
             element.style.display = "none";
           });
           contactId.forEach(element => {
+            element.style.display = "none";
+          });
+          aboutBtn.forEach(element => {
+            element.style.display = "block";
+          });
+          resumeBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          projectsBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          contactBtn.forEach(element => {
             element.style.display = "none";
           });
         }
@@ -97,6 +162,18 @@
           contactId.forEach(element => {
             element.style.display = "none";
           });
+          aboutBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          resumeBtn.forEach(element => {
+            element.style.display = "block";
+          });
+          projectsBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          contactBtn.forEach(element => {
+            element.style.display = "none";
+          });
         }
 
         function clickProjectsId(){
@@ -112,6 +189,18 @@
           contactId.forEach(element => {
             element.style.display = "none";
           });
+          aboutBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          resumeBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          projectsBtn.forEach(element => {
+            element.style.display = "block";
+          });
+          contactBtn.forEach(element => {
+            element.style.display = "none";
+          });
         }
 
         function clickContactId(){
@@ -125,6 +214,18 @@
             element.style.display = "none";
           });
           contactId.forEach(element => {
+            element.style.display = "block";
+          });
+          aboutBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          resumeBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          projectsBtn.forEach(element => {
+            element.style.display = "none";
+          });
+          contactBtn.forEach(element => {
             element.style.display = "block";
           });
         }
@@ -347,7 +448,7 @@
     const textEn = document.querySelectorAll(".text-en");
     const textId = document.querySelectorAll(".text-id");
     
-    function enMode(){
+    function enModeAbout(){
       enBtn.forEach(element => {
         element.style.display = "none";
       });
@@ -371,7 +472,103 @@
       });
     }
     
-    function idMode(){
+    function enModeResume(){
+      enBtn.forEach(element => {
+        element.style.display = "none";
+      });
+      idBtn.forEach(element => {
+        element.style.display = "block";
+      });
+      textEn.forEach(element => {
+        element.style.display = "block";
+      });
+      textId.forEach(element => {
+        element.style.display = "none";
+      });
+      aboutEn.forEach(element => {
+        element.style.display = "none";
+      });
+      projectsEn.forEach(element => {
+        element.style.display = "none";
+      });
+      contactEn.forEach(element => {
+        element.style.display = "none";
+      });
+    }
+    
+    function enModeProjects(){
+      enBtn.forEach(element => {
+        element.style.display = "none";
+      });
+      idBtn.forEach(element => {
+        element.style.display = "block";
+      });
+      textEn.forEach(element => {
+        element.style.display = "block";
+      });
+      textId.forEach(element => {
+        element.style.display = "none";
+      });
+      aboutEn.forEach(element => {
+        element.style.display = "none";
+      });
+      resumeEn.forEach(element => {
+        element.style.display = "none";
+      });
+      contactEn.forEach(element => {
+        element.style.display = "none";
+      });
+    }
+
+    function enModeContact(){
+      enBtn.forEach(element => {
+        element.style.display = "none";
+      });
+      idBtn.forEach(element => {
+        element.style.display = "block";
+      });
+      textEn.forEach(element => {
+        element.style.display = "block";
+      });
+      textId.forEach(element => {
+        element.style.display = "none";
+      });
+      aboutEn.forEach(element => {
+        element.style.display = "none";
+      });
+      resumeEn.forEach(element => {
+        element.style.display = "none";
+      });
+      projectsEn.forEach(element => {
+        element.style.display = "none";
+      });
+    }
+    
+    function enModeProjects(){
+      enBtn.forEach(element => {
+        element.style.display = "none";
+      });
+      idBtn.forEach(element => {
+        element.style.display = "block";
+      });
+      textEn.forEach(element => {
+        element.style.display = "block";
+      });
+      textId.forEach(element => {
+        element.style.display = "none";
+      });
+      aboutEn.forEach(element => {
+        element.style.display = "none";
+      });
+      resumeEn.forEach(element => {
+        element.style.display = "none";
+      });
+      contactEn.forEach(element => {
+        element.style.display = "none";
+      });
+    }
+    
+    function idModeAbout(){
       enBtn.forEach(element => {
         element.style.display = "block";
       });
@@ -391,6 +588,78 @@
         element.style.display = "none";
       });
       contactId.forEach(element => {
+        element.style.display = "none";
+      });
+    }
+    
+    function idModeResume(){
+      enBtn.forEach(element => {
+        element.style.display = "block";
+      });
+      idBtn.forEach(element => {
+        element.style.display = "none";
+      });
+      textEn.forEach(element => {
+        element.style.display = "none";
+      });
+      textId.forEach(element => {
+        element.style.display = "block";
+      });
+      aboutId.forEach(element => {
+        element.style.display = "none";
+      });
+      projectsId.forEach(element => {
+        element.style.display = "none";
+      });
+      contactId.forEach(element => {
+        element.style.display = "none";
+      });
+    }
+
+    function idModeProjects(){
+      enBtn.forEach(element => {
+        element.style.display = "block";
+      });
+      idBtn.forEach(element => {
+        element.style.display = "none";
+      });
+      textEn.forEach(element => {
+        element.style.display = "none";
+      });
+      textId.forEach(element => {
+        element.style.display = "block";
+      });
+      aboutId.forEach(element => {
+        element.style.display = "none";
+      });
+      resumeId.forEach(element => {
+        element.style.display = "none";
+      });
+      contactId.forEach(element => {
+        element.style.display = "none";
+      });
+    }
+
+    function idModeContact(){
+      enBtn.forEach(element => {
+        element.style.display = "block";
+      });
+      idBtn.forEach(element => {
+        element.style.display = "none";
+      });
+      textEn.forEach(element => {
+        element.style.display = "none";
+      });
+      textId.forEach(element => {
+        element.style.display = "block";
+      });
+      aboutId.forEach(element => {
+        element.style.display = "none";
+      });
+      resumeId.forEach(element => {
+        element.style.display = "none";
+      });
+      projectsId.forEach(element => {
         element.style.display = "none";
       });
     }
